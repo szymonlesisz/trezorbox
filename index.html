@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/jcjjhjgimijdkoamemaghajlhegmoclj">
+    <title>TREZOR Box Calculator</title>
+    <link rel="stylesheet" href="css/style.css?r=3">
+</head>
+<body>
+    <div class="menu">
+        <div>
+            <label>Počet TREZOR'u</label>
+            <input id="trezors" placeholder="How many Trezors?" type="number" value="10" />
+        </div>
+        <div>
+            <label>Počet kusů na šířku</label>
+            <input type="range" id="rows" name="rows" min="1" max="10" value="1">
+            <span id="rows_label">0</span>
+        </div>
+        <div>
+            <label>Počet kusů na délku</label>
+            <input type="range" id="cols" name="cols" min="1" max="10" value="1">
+            <span id="cols_label">0</span>
+        </div>
+        <div id="z_label">
+            <label>Počet kusů na výšku</label>
+            <input type="range" id="depths" name="cols" min="1" max="5" value="1">
+            <span>0</span>
+        </div>
+        <!--<div>
+            <label>Vertikální poloha</label>
+            <input type="checkbox" id="vertical" />
+        </div>-->
+        
+    </div>
+    <div id="visualisation">
+        <div class="result"></div>
+    </div>
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/plotly-latest.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
